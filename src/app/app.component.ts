@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LucideAngularModule } from 'lucide-angular';
+import { HeaderComponent } from '@/app/components/shared/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LucideAngularModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  imports: [RouterOutlet, HeaderComponent],
+  template: `
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  `,
 })
-export class AppComponent {
-  title = 'frontend';
-}
+// eslint-disable-next-line prettier/prettier
+export class AppComponent { }
