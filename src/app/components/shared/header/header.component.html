@@ -5,10 +5,11 @@
       <a routerLink="/cart" class="text-white relative">
         <lucide-angular [img]="ShoppingCart" />
         @if (countCard() > 0) {
-        <button type="button"
-          class="rounded-full size-4 bg-white p-1 text-amber-500 flex justify-center items-center text-xs absolute -top-1 -right-2">
-          {{ countCard() }}
-        </button>
+          <button
+            type="button"
+            class="rounded-full size-4 bg-white p-1 text-amber-500 flex justify-center items-center text-xs absolute -top-1 -right-2">
+            {{ countCard() }}
+          </button>
         }
       </a>
     </nav>
